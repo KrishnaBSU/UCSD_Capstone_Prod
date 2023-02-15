@@ -12,4 +12,7 @@
 
 5. Above components are dockerized into two different docker modules: one for data collection, sentiment prediction and update the data base with those predictions. Other to provide the web interface to the user and access the data from the CosmosDB data base and plot the sentiment trend for 'bitcoin'.
 
-6. Both the dockers are hosted on Azure Cloud and the user web interface can be accessed through: _sentipred1.a0gvdsgaezadgfdx.eastus2.azurecontainer.io:5000_ . Please note the FQDN change everytime the container is started for security reasons(eg: to avoid web spoofing).
+6. Both the dockers are hosted on Azure Cloud and the user can use the web interface to access them.
+
+**Accessing the Application:**
+To access the application, user can go to the web address: _sentipred1.a0gvdsgaezadgfdx.eastus2.azurecontainer.io:5000_  and provide the topic as bitcoin and start, end dates in 'yyyy-mm-dd' format. Data for this prediction is only collected from the start of the year. So, the start date can only be from "2023-01-01".  Please also note the FQDN change everytime the container is started for security reasons(eg: to avoid web spoofing). So, please reach out to me for the most accurate FQDN to be used to access the application.
